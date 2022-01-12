@@ -22,14 +22,14 @@ body {
   color: #404040;
   font: 11px normal;
   font-family: Georgia, Garamond, serif;
-  background-image: url('../images/silverware.jpg');
+  background-image: url("../images/silverware.jpg");
 }
 
 a {
   color: #a4a400;
 }
 ul {
-    list-style-image: url('../images/pie_icon.gif');
+  list-style-image: url("../images/pie_icon.gif");
 }
 
 blockquote {
