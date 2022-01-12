@@ -28,6 +28,9 @@ body {
 a {
   color: #a4a400;
 }
+ul {
+    list-style-image: url('../images/pie_icon.gif');
+}
 
 blockquote {
   font-style: italic;
