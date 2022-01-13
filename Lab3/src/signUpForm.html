@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+
+  <body>
+    <div class="mainChart">
+      <form
+        id="student-form"
+        action="http://mumstudents.org/params.php"
+        method="post"
+      >
+        <div class="userSignUpHeader">
+          <label for="name"> Name:</label>
+        </div>
+        <br />
+        <br />
+        <label for="name"> Name:</label>
+        <input type="text" id="fname" name="fname" value=""  maxlength="16" size="10"/>
+        <br />
+        <br />
+        <label for="id">Gender:</label>
+        <label>
+          <input type="radio" value="Male" id="male" name="gender" />
+          Male
+        </label>
+        <label>
+          <input type="radio" value="Female" id="female" name="gender" checked />
+          Female
+        </label>
+        <br />
+        <br />
+        <label for="age"> Age:</label>
+        <input type="text" id="age" name="age" value="" maxlength="2" size="10" />
+        <br />
+        <br />
+        <label for="personality"> Personality Type:</label>
+        <input type="text" id="personality" name="personality" value=""  maxlength="4" size="6"/>
+        <br />
+        <br />
+        <label for="os">Favorite Os:</label>
+        <select name="os" id="os">
+          <option value=""></option>
+          <option value="Windows "selected>Windows</option>
+          <option value="MacOs">MacOs</option>
+          <option value="Linux">Linux</option>
+        </select>
+        <br />
+        <br />
+        <label for="SeakingAge"> Seeking Age:</label>
+        <input
+          type="text"
+          id="SeakingAgeMin"
+          name="SeakingAgeMin"
+          value=""
+          placeholder="min"
+          maxlength="2"
+          size="6"
+        />
+        <span>to</span>
+        <input
+          type="text"
+          id="SeakingAgeMax"
+          name="SeakingAgeMax"
+          value=""
+          placeholder="max"
+          maxlength="2"
+          size="6"
+        />
+        <br />
+        <br />
+        <input type="submit" value="Get Grade" />
+      </form>
+    </div>
+  </body>
+</html>

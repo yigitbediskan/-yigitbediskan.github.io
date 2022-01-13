@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+
+  <body>
+    <h1>Retrieve your grade</h1>
+    <form
+      id="student-form"
+      action="http://mumstudents.org/params.php"
+      method="post"
+    >
+      <label for="name">Student Name:</label>
+      <input type="text" id="fname" name="fname" value="" />
+      <br />
+      <br />
+      <label for="id">Student ID:</label>
+      <input type="text" id="sid" name="sid" value="" />
+      <br />
+      <br />
+      <div id="entry">
+        <label>
+          <input type="radio" value="February" name="entry" />
+          February
+        </label>
+        <label>
+          <input type="radio" value="June" name="entry" />
+          June
+        </label>
+        <label>
+          <input type="radio" value="November" name="entry" />
+          November
+        </label>
+      </div>
+      <br />
+      <label for="course">Select Course:</label>
+      <select name="course" id="course">
+        <option value=""></option>
+        <option value="CS472">CS472 - Web Programming</option>
+        <option value="STC506">
+          STC506 - STC Pt2 Leadership for Tech Managers
+        </option>
+        <option value="CS590">CS590- Software Architecture</option>
+        <option value="CS544">CS544 - Enterprise Architecture</option>
+        <option value="CS435">CS435- Algorithms</option>
+      </select>
+      <br />
+      <br />
+      <input type="checkbox" id="promise" name="promise" value="Marked" />
+      <label for="promise">I promise to only look at data about myself</label>
+      <br />
+      <br />
+      <input type="submit" value="Get Grade" />
+    </form>
+  </body>
+</html>
