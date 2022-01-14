@@ -9,7 +9,7 @@
       action="http://mumstudents.org/params.php"
       method="post"
     >
-      <label for="name">Student Name:</label>
+      <label for="fname">Student Name:</label>
       <input type="text" id="fname" name="fname" value="" />
       <br />
       <br />
@@ -32,24 +32,22 @@
         </label>
       </div>
       <br />
-      <label for="course">Select Course:</label>
-      <select name="course" id="course">
+      <label for="assignment">Select Assignment:</label>
+      <select name="assignment" id="assignment">
         <option value=""></option>
-        <option value="CS472">CS472 - Web Programming</option>
-        <option value="STC506">
-          STC506 - STC Pt2 Leadership for Tech Managers
-        </option>
-        <option value="CS590">CS590- Software Architecture</option>
-        <option value="CS544">CS544 - Enterprise Architecture</option>
-        <option value="CS435">CS435- Algorithms</option>
+        <option value="Lab0" selected>Lab0</option>
+        <option value="Lab1">Lab1</option>
+        <option value="Lab2">Lab2</option>
+        <option value="Homework1">Homework1</option>
+        <option value="Homework2">Homework2</option>
       </select>
       <br />
       <br />
-      <input type="checkbox" id="promise" name="promise" value="Marked" />
-      <label for="promise">I promise to only look at data about myself</label>
+      <input type="checkbox" id="confirm" name="confirm" value="Confirmed" />
+      <label for="confirm">I promise to not cheat</label>
       <br />
       <br />
-      <input type="submit" value="Get Grade" />
+      <input type="submit" value="Get Grade !!!" />
     </form>
   </body>
 </html>
