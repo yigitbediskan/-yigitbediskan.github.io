@@ -116,6 +116,6 @@ h1 {
   bottom: 0px;
   text-align: center;
 }
-span.italic {
+.italic {
   font-style: italic;
 }
