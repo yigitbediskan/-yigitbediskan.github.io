@@ -1,0 +1,42 @@
+1. What is the difference between the following 2 statements?
+	setTimeout(booyah, 2000);
+	setTimeout(booyah(), 2000);
+	
+	
+	The difference is that first one is a function declaration and so it is loaded before any code executed, 
+	but second one is a function expression and is loaded when interpreter reach that code.
+
+
+
+2. What do the following 2 alerts display (answer without running the code)?
+	var myfunc = function(a, x) {
+		return a * x;
+	};
+	var x = myfunc(2, 3);
+	var y = myfunc;
+	alert(x);
+	alert(y(2,3));
+	
+	Both of them show after message as 6. First x works and then y.
+	
+	
+3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+	says “BOOYAH!”
+	setTimeout(booyah1, 2000);
+	setTimeout(booyah2(), 2000);
+	
+	
+	 function booyah1() {
+      alert("BOOYAH");
+    }
+
+    const booyah2 = function () {
+      alert("BOOYAH");
+    };
+	
+	
+4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+for using it)?
+
+	I works for speration of html and Javascript files.  we can achive it like that <script src="example.js" ></script>. It is impırtant for reusblity we dont have to update html pages 
+	when we want to update js functinalities.
