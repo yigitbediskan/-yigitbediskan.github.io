@@ -1,3 +1,4 @@
+var accountInfoList = [];
 const Module = function gg() {
   class Account {
     constructor(name, value) {
@@ -5,7 +6,7 @@ const Module = function gg() {
       this.depositVal = value;
     }
   }
-  var accountInfoList = [];
+
   const textArea = document.getElementById("text");
 
   var addAccount = function () {
