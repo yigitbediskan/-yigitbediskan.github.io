@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <div class="viewer-content">
+      <h1>CS472: ASCII Animation Viewer</h1>
+      <textarea id="viewer" class="viewer" cols="80" rows="20"></textarea>
+      <div class="viewer-controls">
+        <fieldset>
+          <legend>Play Controls:</legend>
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+        </fieldset>
+        <fieldset>
+          <legend>Animation:</legend>
+          <select name="animation" id="animation">
+            <option value="Blank">Blank</option>
+            <option value="Exercise">Exercise</option>
+            <option value="Juggler">Juggler</option>
+            <option value="Bike">Bike</option>
+            <option value="Dive">Dive</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Size:</legend>
+          <select name="size" id="size">
+            <option value="7pt">Tiny</option>
+            <option value="10pt">Small</option>
+            <option value="12pt" selected>Medium</option>
+            <option value="16pt">Large</option>
+            <option value="24pt">Extra Large</option>
+            <option value="32pt">XXL</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Speed:</legend>
+          <label>
+            <input id="turbo" type="checkbox" value="2" name="entry" />
+            Turbo
+          </label>
+        </fieldset>
+      </div>
+      <div style="float: right;">
+        <img src="../images/w3c-html.png" />
+        <br />
+        <img src="../images/w3c-css.png" />
+        <br />
+        <img src="../images/w3c-xhtml.png" />
+      </div>
+    </div>
+    <script src="ascii.js"></script>
+    <script src="animations.js"></script>
+  </body>
+</html>
